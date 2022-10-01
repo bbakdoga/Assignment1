@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<meta name="description" content="Feedback">
+	<meta name="keywords" content="HTML, Form">
+	<meta name="author" content="Baris">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Website</title>
+</head>
+<body>
+    <h1>Website Feedback Form</h1>
+    <form method="GET" oninput="x.value=parseInt(a.value)">
+		<fieldset>
+		<legend>Form</legend>
+		Enter your name:<input type="text" name="firstname" required>
+		<br>
+		Enter your email:<input type="email" name="email" required>
+		<br>
+		
+  		<br>
+  		<label for="birthday">Birthday:</label>
+  		<input type="date" id="birthday" name="birthday" required>
+  		<br>
+        Gender: <br>
+  		<input type="radio" id="male" name="gender" value="male" required>
+  		<label for="male">Male</label><br>
+  		<input type="radio" id="female" name="gender" value="female" required>
+  		<label for="female">Female</label><br>
+  		<input type="radio" id="other" name="gender" value="other" required>
+  		<label for="other">Other</label>
+  		<br>
+  		<label for="myfile">Upload your feedback (Optional):</label>
+  		<input type="file" id="myfile" name="myfile">
+        <br>
+        <label for="jobform">Tell us about your website suggestion:</label> <br>
+        <textarea id="textforum" name="textforum" rows="4" cols="50" maxlength="1000" required wrap="hard" placeholder="Input your answer here"></textarea>
+        <br>
+		Website Satisfaction Level:
+		<input type="range" id="a" value="50" name="a">
+		=<output name="x" for="a"></output>
+		<br>
+  		<input type="submit" onclick="alert(' Thanks for submitting feedback!')" value="Submit">
+  		<input type="reset">
+  		<br> <br>
+  		<input type="button" onclick="location.href='index.html'" name="goback" value="Go Back">
+		</fieldset>  		
+
+
+	</form>
+
+</body>
+</html>
